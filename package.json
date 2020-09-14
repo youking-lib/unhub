@@ -1,0 +1,43 @@
+{
+  "name": "unhub",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "tsc -w",
+    "start": "nodemon --ignore public/ node dist/index.js",
+    "test": "mocha -r ts-node/register src/**/*.test.ts -w --ignore node_modules"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/lodash": "^4.14.150",
+    "@types/node": "^13.11.0",
+    "chai": "^4.2.0",
+    "mocha": "^7.1.1",
+    "typescript": "^3.8.3"
+  },
+  "dependencies": {
+    "@koa/cors": "^3.0.0",
+    "@types/koa": "^2.11.3",
+    "cors": "^2.8.5",
+    "etag": "^1.8.1",
+    "gunzip-maybe": "^1.4.2",
+    "koa": "^2.11.0",
+    "koa-body": "^4.1.1",
+    "koa-favicon": "^2.1.0",
+    "koa-router": "^8.0.8",
+    "koa-static-cache": "^5.1.3",
+    "koa-validate": "^1.0.7",
+    "koa2-winston": "^3.1.1",
+    "lru-cache": "^5.1.1",
+    "mime": "^2.4.5",
+    "node-fetch": "^2.6.0",
+    "nodemon": "^2.0.3",
+    "sri-toolbox": "^0.2.0",
+    "tar-stream": "^2.1.2",
+    "validate-npm-package-name": "^3.0.0",
+    "winston": "^3.2.1"
+  }
+}
